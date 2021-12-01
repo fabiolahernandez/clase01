@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-      <div align="center">
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+            /* vamos a importar una fuente tipográfica desde  */
+
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,700&display=swap');
+
+            /* vamos a contradecir a Bootstrap, partiendo por la fuente tipográfica y afectando sus variables --> https://getbootstrap.com/docs/5.1/customize/css-variables/  */
 
             :root {
                 --bs-body-font-family: "PT Serif", Georgia, serif;
             }
+
+            /* vamos a ajustar los pesos de algunos títulos a lo que dispone la fuente  */
+
             h1,
             h2,
             h3,
             h4 {
-                font-weight: 400;
+                font-weight: 400;font-family: 'Roboto', sans-serif;
             }
+
+            /* vamos a ajustar los pesos de otros títulos y negrita a lo que dispone la fuente  */
+
             h5,
             h6,
             strong {
@@ -41,7 +47,7 @@
             /* usaré el ">" entre el título se segundo nive (h2) y el lapso en la misma línea (span) --> https://techbrij.com/css-selector-adjacent-child-sibling */
 
             h2 > span {
-                background: rgba(225, 112, 49, 1);
+                background:#BB5C0E;
                 color: rgba(255, 255, 255, 1);
             }
 
@@ -51,184 +57,202 @@
                 font-size: calc(1.5rem + 1vw);
             }
         </style>
-        <title>Orangutan de Borneo!</title>
+
+        <title>¡intentando SVG!</title>
     </head>
+
     <body>
-    </style>
-          <body>
-            </h1>
+
+        <header class="container">
             <div class="row">
                 <div class="col-sm-8 mx-auto">
                     <h2 class="text-center pt-5 fst-italic"><span class="px-3 py-1">Pongo pygmaeus</span></h2>
                     <h1 class="text-center py-4">Orangutan de Borneo</h1>
-                    <!--uso https://www.lipsum.com/ para el texto de relleno-->
-                    <p class="lead">
-                      <div class="mx-auto" style="width: 600px;">
-                        Es el mamífero arbóreo más grande del mundo, lo cual lo hace
-                        probablemente uno de los simios más fascinantes que aún existen.
-                        En lengua malaya orang gutan significa “hombre del bosque”.
-</div>
-
-                    </p>
-
-
-                      <div class="mx-auto" style="width: 600px;">
-                      Infografía Fabiola Hernández y Juan Pablo Astorga
+                    <p class="lead">Es el mamífero arbóreo más grande del mundo, lo cual lo hace
+probablemente uno de los simios más fascinantes que aún existen.
+En lengua malaya orang gutan significa “hombre del bosque”.</p>
+                    <p>Es el mamífero arbóreo más grande del mundo, lo cual lo hace
+probablemente uno de los simios más fascinantes que aún existen.
+En lengua malaya orang gutan significa “hombre del bosque”.</p>
                 </div>
-
-               <div class="mx-auto" style="width: 600px;">
-               <img class="displayed" src="img/intro.png"alt="El mamífero arbóreo más grande del mundo">
-               <div class="position-static">
-               </div>
-               <div class="text-center">
-            </div>
-         </div>
-  <h3 class="text-center pt-6 pb-2">Localización</h3>
-  </div>
-
-</div>
-</div>
-            </div>
-            <div align="center">
-            <div class="card-center" style="width: 18rem;"position align= "center">
-
-    <img src="img/borneo.png" class="card-img-center" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Donde nos encontramos...</h5>
-      <p class="card-text">toca el botón para saber en que lugar de la isla se encuentra </p>
-    </div>
-  </div>
-  </p>
-  </p>
-  </p>
-  <div class="mx-auto" style="width: 600px;">
-  Paises que integran la isla de Borneo
-            <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-withe">malasia</button>
-  <button type="button" class="btn btn-withe">Indonesia</button>
-  <button type="button" class="btn btn-withe">Brunéi</button>
-      </p>
-      </div>
-        </p>
-        <div class="mx-auto" style="width: 600px;">
-        Sub especies del orangutan en la Isla
-  <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-light">Pygmaeus</button>
-  <button type="button" class="btn btn-light">Wurmbii</button>
-  <button type="button" class="btn btn-light">Morio</button>
-</div>
+                <div class="mx-auto" style="width: 500px;">
+                    <img src="img/orangutan.png" alt="describa lo que se ve en la imagen" class="w-100 my-3" />
+                <div class="position-static">
+                </div>
+                <div class="col-sm-11 col-md-8 mx-auto">
+                </div>
             </div>
         </header>
         <main>
             <section class="container">
                 <div class="row">
+                    <div class="col-sm-12 mx-auto">
+                        <!--PODEMOS INCLUIR EL SVG DIRECTAMENTE, DESDE AQUÍ A LA LÍNEA 311-->
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        	 viewBox="0 0 1000 250" style="enable-background:new 0 0 1000 250;" xml:space="preserve">
+                        <style type="text/css">
+                        	.st0{fill:#AAAAAA;}
+                        	.st1{fill:#FFFFFF;}
+                        	.st2{font-family:'Helvetica';}
+                        	.st3{font-size:26.2839px;}
+                        	.st4{enable-background:new    ;}
+                        	.st5{font-size:20px;}
+                        	.st6{fill:none;stroke:#686969;stroke-width:0.474;stroke-linecap:round;}
+                        	.st7{fill:#BB5C0E;}
+                        	.st8{font-size:30.9223px;}
+                        	.st9{fill:#BB5C0E}
+                        </style>
+                        <g id="lc">
+                        	<circle class="st0" cx="729.2" cy="191.1" r="27.1"/>
+                        	<text transform="matrix(1 0 0 1 712.5064 200.7115)" class="st1 st2 st3">LC</text>
+                        </g>
+                        <g id="nt">
+                        	<circle class="st0" cx="652.4" cy="191.1" r="27.1"/>
+                        	<text transform="matrix(1 0 0 1 635.027 200.7115)" class="st1 st2 st3">NT</text>
+                        </g>
+                        <g id="vu">
+                        	<circle class="st0" cx="576.2" cy="191.1" r="27.1"/>
+                        	<text transform="matrix(1 0 0 1 557.9618 200.7115)" class="st1 st2 st3">VU</text>
+                        </g>
+                        <g id="en">
+                        	<circle class="st0" cx="500.1" cy="191.1" r="27.1"/>
+                        	<text transform="matrix(1 0 0 1 481.8506 200.7115)" class="st1 st2 st3">EN</text>
+                        </g>
+                        <g id="cr">
+                        	<circle class="st9" cx="423.7" cy="191.1" r="27.1"/>
+                        	<text transform="matrix(1 0 0 1 404.764 200.7115)" class="st1 st2 st3">CR</text>
+                        </g>
+                        <g id="ew">
+                        	<circle class="st0" cx="347.5" cy="191.1" r="27.1"/>
+                        	<text transform="matrix(1 0 0 1 326.2961 200.7115)" class="st1 st2 st3">EW</text>
+                        </g>
+                        <g id="ex">
+                        	<circle class="st0" cx="271.2" cy="191.1" r="27.1"/>
+                        	<text transform="matrix(1 0 0 1 253.6985 200.7115)" class="st1 st2 st3">EX</text>
+                        </g>
+                        <g>
+                        	<text transform="matrix(1 0 0 1 668.1641 96.143)" class="st4"><tspan x="0" y="0" class="st2 st5">Preocupación </tspan><tspan x="30" y="24" class="st2 st5">menor </tspan></text>
+                        	<line class="st6" x1="729.2" y1="138.3" x2="729.2" y2="154.7"/>
+                        </g>
+                        <g>
+                        	<path class="st6" d="M386.5,154.7v-26.4c0-3.5,2.8-6.3,6.3-6.3H487c2.6,0,4.6-0.2,6.1-0.5s2.9-1.1,4.1-2.2c1.5-1.9,2.4-3.5,2.5-5
+                        		c0.1,1.5,1,3.1,2.5,5c1.2,1.2,2.6,1.9,4.1,2.2c1.5,0.3,3.6,0.5,6.1,0.5h95.4c3.5,0,6.3,2.8,6.3,6.3v26.4"/>
+                        	<text transform="matrix(1 0 0 1 446.8811 96.143)" class="st2 st5">Amenazado</text>
+                        </g>
+                        <g>
+                        	<line class="st6" x1="271.2" y1="111.1" x2="271.2" y2="154.7"/>
+                        	<text transform="matrix(1 0 0 1 240.6586 96.143)" class="st2 st5">Extinto</text>
+                        </g>
+                        <text transform="matrix(1 0 0 1 392.8677 52.61)" class="st7 st2 st8">DESCRIPCIÓN</text>
+                        </svg>
+
+                            </g>
                     <div class="col-sm-9 mx-auto">
+                        <h3 class="text-center pt-5 pb-2">Localización</h3>
+                        <!--              AQUÍ TRABAJARE MI CARDS CON MAPA-->
+                          </div>
                         </div>
+                        <div align="center">
+                        <div class="card-center" style="width: 18rem;"position align= "xml:space="preserve"">
 
-                        <h4 class="text-center pt-5 pb-2">Caracteristicas Formales<br />
-                        Machos y hembras
-                        </h4>
-                        <div class="card" style="width: 18rem";"position-absolute= left">
-                       <img src="img/bridas.png" class="card-img-top" alt="organutan dominante">
-                       <div class="card-body">
-                       <p class="card-text">Solo el macho dominante tiene
-protuberancias laterales que se
-denominan bridas</p>
-                      </div>
-                      </div>
-                      <div class="card" style="width: 18rem";"position-absolute= right">
-                      <img src="img/sinbridas.png" class="card-img-top" alt="los machos que no las poseen se integran con las hembras">
-                     <div class="card-body">
-                   <p class="card-text">Los machos que no las poseen se integran con las hembras>
-                   </p>
+                <img src="img/mapafondo2.png" class="card-img-center" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Donde nos encontramos...</h5>
+                  <p class="card-text">toca el botón para saber en que lugar de la isla se encuentra </p>
+                </div>
+              </div>
+              </p>
+              </p>
+              </p>
+              <div class="mx-auto" style="width: 600px;">
+              Paises que integran la isla de Borneo
+                        <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-withe">malasia</button>
+              <button type="button" class="btn btn-withe">Indonesia</button>
+              <button type="button" class="btn btn-withe">Brunéi</button>
+                  </p>
+                  </div>
+                    </p>
+                    <div class="mx-auto" style="width: 600px;">
+                    Sub especies del orangutan en la Isla
+              <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-light">Pygmaeus</button>
+              <button type="button" class="btn btn-light">Wurmbii</button>
+              <button type="button" class="btn btn-light">Morio</button>
+            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <section class="container">
+                            <div class="row">
+                                <div class="col-sm-9 mx-auto">
+                                    </div>
+<!-- AQUÍ termina mi mapa con cards-->
+<h3 class="text-center pt-5 pb-2">Caracteristicas fisicas</h3>
+</p>
+</p>
+</p>
+<!-- AQUÍ empieza mis bridas-->
+  <div class="card" style="width: 18rem;">
+    <img src="img/bridas.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Macho dominante</h5>
+      <p class="card-text">Los machos que no las poseen se integran con las hembras.</p>
+      <a href="#" class="btn btn-primary">más</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="img/sinbridas.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Otros machos</h5>
+      <p class="card-text">Solo el macho dominante tiene protuberancias laterales que se denominan bridas.</p>
+      <a href="#" class="btn btn-primary">más</a>
+    </div>
+  </div>
+<!-- AQUÍ TERMINA las cards-->
+<section class="container">
+  <h3 class="text-center pt-5 pb-2">Territorio</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 mx-auto">
+            <p class="lead"> Revisemos aquí la percepción del espacio de un orangutan en relación a su género en su hábitat natural versus un zoologico en Chile.</p>
         </div>
-    </div>
-    </div>
-          </div>
-              <div class="col-sm-11 mx-auto">
+  </section>
 
-              </div>
-            </p>
-              </div>
+                                      <object data="img/territorio.svg" type="image/svg+xml"></object>
+                                        </div>
+  <!-- AQUÍ TERMINASVG territorio-->
 
-                        <h4 class="text-center pt-5 pb-2">
-                            Caracteristicas<br />
-                        formales
-                      </h4>
-                        <img src="img/orangutan.png" alt="describa lo que se ve en la imagen" class="w-60" />
-                    </div>
-                    <div class="col-sm-9 mx-auto">
-                        <h3 class="text-center pt-5 pb-2">Costumbres</h3>
-                        <img src="img/nido.jpg" alt="describa lo que se ve en la imagen" class="w-60"/>
                     </div>
                 </div>
             </section>
+              <h3 class="text-center pt-5 pb-2">Familia</h3>
             <section>
                 <div class="container-fluid g-0">
                     <div class="row g-0">
                         <div class="col-sm-12 mx-auto">
-                            <h3 class="text-center pt-5 pb-2">desplazamiento</h3>
-                                </p>
-                                </div>
-                                  </div>
-                                  <div class="mx-auto" style="width: 200px;">
-                                <img src="img/des01.png" class="rounded float-start" alt="...">
-                                <img src="img/des01.png" class="rounded float-middle" alt="...">
-                                <img src="img/des01.png" class="rounded float-next" alt="...">
+                            <h3 class="text-center pt-5 pb-2">Movements and maneuvers</h3>
+                            <div class="row bg-dark g-0">
+                                <!--también podemos usar object para ir a buscar el SVG-->
+                                <object class="col-sm-6 col-md-2" data="img/moves1-2.svg" type="image/svg+xml"></object>
+                                <object class="col-sm-6 col-md-2" data="img/moves3-4.svg" type="image/svg+xml"></object>
+                                <object class="col-sm-6 col-md-2" data="img/moves5-6.svg" type="image/svg+xml"></object>
+                                <object class="col-sm-6 col-md-2" data="img/moves7-8.svg" type="image/svg+xml"></object>
+                                <object class="col-sm-6 col-md-2" data="img/moves9-10.svg" type="image/svg+xml"></object>
+                                <object class="col-sm-6 col-md-2" data="img/moves11-12.svg" type="image/svg+xml"></object>
+                            </div>
                         </div>
-                      <h3 class="text-center pt-5 pb-2">Turberas</h3>
-                        <div class="mx-auto" style="width: 200px;">
-                      <img src="img/turberas.png"class="rounded mx-auto d-block" alt="captura co2">
-
                     </div>
-                    <h3 class="text-center pt-5 pb-2">Territorio</h3>
-
-                    <img src="img/territorio.png" class="rounded mx-auto d-block"  alt="...">
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-9 mx-auto">
-                            <div class="row pt-3 pb-5">
-                            </div>
-                            <h3 class="text-center pt-5 pb-2">Amenazas</h3>
-                              <div class="mx-auto" style="width: 200px;">
-                            <img src="img/amenazafuego.png"class="rounded mx-auto d-block" alt="captura co2">
-
-                          <h3 class="text-center pt-5 pb-2">Amenazas</h3>
-                          </p>
-                        <img src="img/estadisticas.png" class="img-fluid" alt="Responsive image">
-                </div>
-                  </div>
-                    </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-9 mx-auto">
-                                        <div class="row pt-3 pb-5">
-                                            </div>
-                                <div class="col-sm-12 py-2"><h5>Simbología</h5></div>
-                                <div class="col-sm-4 py-2">
-                                    <dl class="row d-flex align-items-center">
-                                        <dt class="col-3"><img src="img/1x1.png" class="w-100"></dt><dd class="col-9"><small>Loren ipsum</small></dd>
-                                    </dl>
-                                </div>
-                                <div class="col-sm-4 py-2">
-                                    <dl class="row d-flex align-items-center">
-                                    </dl>
-                                </div>
-                                <div class="col-sm-4 py-2">
-                                    <dl class="row d-flex align-items-center">
-                                    </dl>
-                                </div>
-                                <div class="col-sm-12 py-2">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus eros, efficitur a eros at, eleifend rutrum est. Proin dolor nisl, hendrerit in dapibus vitae, molestie eu magna. Mauris at erat
-                                        neque. Nulla ut convallis elit. Donec venenatis quam quam, quis facilisis sapien ultricies ac. Proin ut commodo nibh, non bibendum dui. Vestibulum convallis efficitur metus, vel vestibulum libero
-                                        interdum quis. Ut varius sagittis sapien eget cursus. Morbi accumsan lectus nec sapien fermentum, a vestibulum nisl tempus. Pellentesque mollis nulla orci, id lobortis magna egestas quis. Nunc
-                                        molestie, purus a posuere dapibus, turpis orci ornare elit, in semper dui purus sed nulla. Aenean vitae pharetra sem. Etiam consequat urna a lorem efficitur, vitae venenatis nisl rutrum. Aliquam
-                                        dictum libero porttitor tellus consequat malesuada. Vivamus rhoncus ante ut libero pellentesque, luctus consectetur orci ultrices.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="col-sm-9 my-5 mx-auto">
+                            <p>Lo que ven arriba lo "tomé prestado" de <a href="https://multimedia.scmp.com/culture/article/ufo/" target="_blank" rel="noopener noreferrer">Are we alone?</a>, un trabajo de Adolfo Arranz y Pablo Robles, publicado en el South China Morning Post. Lo tomé por dos razones: (1) En cada SVG pueden ver <a href="https://css-tricks.com/guide-svg-animations-smil/" target="_blank" rel="noopener noreferrer">animaciones</a>, y (2) cada SVG está separado para adaptarse a distintas pantallas: Parece una única gráfica, pero en realidad son seis, y cada una presenta un par de movimientos.</p>
+                            <p>Y podemos encontrar maneras más sencillas de animar SVG. Podemos usar sólo CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:</p>
+                            <object class="mx-5" data="img/el-grito.svg" type="image/svg+xml"></object>
+                            <p class="text-center mx-5 small">Este es el saco gural o faringeo del Siamang, que puede inflarse hasta alcanzar el tamaño de su cabeza. Está presente en macho y hembra. Se trata de una característica morfológica única que los distingue de otros gibones.</p>
                         </div>
                     </div>
                 </div>
@@ -236,16 +260,10 @@ denominan bridas</p>
                     <div class="row g-0">
                         <div class="col-sm-12">
                             <h3 class="text-center pt-5 pb-2">Familia</h3>
-
+                            <img src="img/2x1.png" alt="describa lo que se ve en la imagen" class="w-100" />
                         </div>
                         <div class="col-sm-8 py-5 mx-auto">
-                            <p class="px-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus eros, efficitur a eros at, eleifend rutrum est. Proin dolor nisl, hendrerit in dapibus vitae, molestie eu magna. Mauris at erat neque. Nulla
-                                ut convallis elit. Donec venenatis quam quam, quis facilisis sapien ultricies ac. Proin ut commodo nibh, non bibendum dui. Vestibulum convallis efficitur metus, vel vestibulum libero interdum quis. Ut varius
-                                sagittis sapien eget cursus. Morbi accumsan lectus nec sapien fermentum, a vestibulum nisl tempus. Pellentesque mollis nulla orci, id lobortis magna egestas quis. Nunc molestie, purus a posuere dapibus,
-                                turpis orci ornare elit, in semper dui purus sed nulla. Aenean vitae pharetra sem. Etiam consequat urna a lorem efficitur, vitae venenatis nisl rutrum. Aliquam dictum libero porttitor tellus consequat
-                                malesuada. Vivamus rhoncus ante ut libero pellentesque, luctus consectetur orci ultrices.
-                            </p>
+                            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tellus eros, efficitur a eros at, eleifend rutrum est. Proin dolor nisl, hendrerit in dapibus vitae, molestie eu magna. Mauris at erat neque. Nulla ut convallis elit. Donec venenatis quam quam, quis facilisis sapien ultricies ac. Proin ut commodo nibh, non bibendum dui. Vestibulum convallis efficitur metus, vel vestibulum libero interdum quis. Ut varius sagittis sapien eget cursus. Morbi accumsan lectus nec sapien fermentum, a vestibulum nisl tempus. Pellentesque mollis nulla orci, id lobortis magna egestas quis. Nunc molestie, purus a posuere dapibus, turpis orci ornare elit, in semper dui purus sed nulla. Aenean vitae pharetra sem. Etiam consequat urna a lorem efficitur, vitae venenatis nisl rutrum. Aliquam dictum libero porttitor tellus consequat malesuada. Vivamus rhoncus ante ut libero pellentesque, luctus consectetur orci ultrices.</p>
                         </div>
                     </div>
                 </div>
